@@ -5,223 +5,258 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Precisa Sistematização & Tecnologia</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
 }
 
-body {
-    background: #F4F6FA;
-    color: #333;
+body{
+background:#ffffff;
+color:#1c1c1c;
+line-height:1.6;
 }
 
 /* HEADER */
-header {
-    background: #ffffff;
-    padding: 15px 10%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 3px solid #243E8F;
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:white;
+position:fixed;
+width:100%;
+top:0;
+box-shadow:0 5px 20px rgba(0,0,0,0.05);
+z-index:999;
 }
 
-.logo {
-    height: 65px;
+.logo{
+height:55px;
 }
 
-nav a {
-    color: #243E8F;
-    text-decoration: none;
-    margin-left: 25px;
-    font-weight: 500;
-    transition: 0.3s;
-}
-
-nav a:hover {
-    color: #A32035;
+nav a{
+margin-left:30px;
+text-decoration:none;
+color:#243E8F;
+font-weight:500;
 }
 
 /* HERO */
-.hero {
-    background: linear-gradient(135deg, #1B2F6B, #243E8F);
-    color: white;
-    text-align: center;
-    padding: 110px 20px;
+.hero{
+height:100vh;
+background:linear-gradient(120deg,#1B2F6B,#243E8F);
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+padding:0 20px;
 }
 
-.hero h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
+.hero h1{
+font-size:52px;
+font-weight:700;
+margin-bottom:20px;
 }
 
-.hero p {
-    max-width: 650px;
-    margin: auto;
-    margin-bottom: 35px;
-    opacity: 0.95;
+.hero p{
+max-width:700px;
+margin:0 auto 40px auto;
+font-size:20px;
+opacity:.9;
 }
 
-.btn {
-    background: #ffffff;
-    color: #243E8F;
-    padding: 14px 30px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: 0.3s;
+.btn{
+padding:16px 40px;
+border-radius:6px;
+text-decoration:none;
+font-weight:600;
+display:inline-block;
+margin:10px;
 }
 
-.btn:hover {
-    background: #A32035;
-    color: white;
+.btn-primary{
+background:white;
+color:#243E8F;
+}
+
+.btn-secondary{
+border:2px solid white;
+color:white;
 }
 
 /* SEÇÕES */
-.section {
-    padding: 80px 10%;
-    text-align: center;
+.section{
+padding:120px 8%;
 }
 
-.section h2 {
-    font-size: 30px;
-    margin-bottom: 40px;
-    color: #243E8F;
+.section h2{
+font-size:38px;
+margin-bottom:30px;
+color:#243E8F;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
+/* PROVA SOCIAL */
+.stats{
+display:flex;
+justify-content:space-around;
+text-align:center;
+flex-wrap:wrap;
 }
 
-.card {
-    background: white;
-    padding: 30px;
-    border-radius: 10px;
-    border-top: 4px solid #243E8F;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-    transition: 0.3s;
+.stat h3{
+font-size:42px;
+color:#243E8F;
 }
 
-.card:hover {
-    transform: translateY(-6px);
-    border-top: 4px solid #A32035;
+.stat p{
+color:#666;
 }
 
-.card h3 {
-    margin-bottom: 15px;
-    color: #1B2F6B;
+/* SOLUÇÕES */
+.solutions{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:40px;
 }
 
-/* CONTATO */
-.contact {
-    background: #1B2F6B;
-    color: white;
-    padding: 80px 10%;
-    text-align: center;
+.solution-card{
+padding:40px;
+background:#f8faff;
+border-radius:16px;
+transition:.3s;
 }
 
-.contact h2 {
-    margin-bottom: 20px;
+.solution-card:hover{
+transform:translateY(-8px);
 }
 
-.contact p {
-    margin-bottom: 10px;
+/* DIFERENCIAIS */
+.diferenciais{
+background:#f4f6fa;
 }
 
-/* RODAPÉ */
-footer {
-    background: #243E8F;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    font-size: 14px;
+.diferenciais-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
 }
 
-/* RESPONSIVO */
-@media(max-width: 768px) {
-    header {
-        flex-direction: column;
-        text-align: center;
-    }
+/* CTA */
+.cta{
+background:#1B2F6B;
+color:white;
+text-align:center;
+padding:100px 20px;
+}
 
-    nav {
-        margin-top: 15px;
-    }
+.cta h2{
+font-size:40px;
+margin-bottom:20px;
+}
 
-    nav a {
-        margin: 0 10px;
-    }
-
-    .hero h2 {
-        font-size: 26px;
-    }
+/* FOOTER */
+footer{
+background:#243E8F;
+color:white;
+text-align:center;
+padding:40px;
+font-size:14px;
 }
 </style>
 </head>
-
 <body>
 
 <header>
-    <img src="logo.png" alt="Precisa Sistematização e Tecnologia" class="logo">
-    <nav>
-        <a href="#sobre">Sobre</a>
-        <a href="#servicos">Serviços</a>
-        <a href="#contato">Contato</a>
-    </nav>
+<img src="logo.png" class="logo">
+<nav>
+<a href="#sobre">Sobre</a>
+<a href="#solucoes">Soluções</a>
+<a href="#contato">Contato</a>
+</nav>
 </header>
 
 <section class="hero">
-    <h2>Soluções Inteligentes em Gestão Documental e Tecnologia</h2>
-    <p>Organizamos informações, estruturamos dados e desenvolvemos soluções tecnológicas que tornam sua empresa mais eficiente, segura e preparada para o futuro.</p>
-    <a href="#contato" class="btn">Solicitar Contato</a>
+<div>
+<h1>Transformamos Dados em Inteligência Estratégica</h1>
+<p>Especialistas em governança da informação, inteligência artificial e transformação digital para o setor público e privado.</p>
+<a href="#contato" class="btn btn-primary">Falar com Especialista</a>
+<a href="#solucoes" class="btn btn-secondary">Conheça Nossas Soluções</a>
+</div>
+</section>
+
+<section class="section">
+<div class="stats">
+<div class="stat">
+<h3>+25</h3>
+<p>Anos de Experiência</p>
+</div>
+<div class="stat">
+<h3>+200</h3>
+<p>Projetos Executados</p>
+</div>
+<div class="stat">
+<h3>100%</h3>
+<p>Foco em Governança e Conformidade</p>
+</div>
+</div>
 </section>
 
 <section id="sobre" class="section">
-    <h2>Sobre a Empresa</h2>
-    <p>A Precisa Sistematização & Tecnologia oferece soluções completas em gestão documental, digitalização e inteligência de dados, com foco em organização, eficiência e inovação.</p>
+<h2>Sobre a Precisa</h2>
+<p>A Precisa Sistematização & Tecnologia atua desde 1998 desenvolvendo soluções estratégicas em gestão documental, estruturação de dados e inteligência artificial aplicada à governança pública e corporativa.</p>
 </section>
 
-<section id="servicos" class="section">
-    <h2>Serviços</h2>
-
-    <div class="grid">
-        <div class="card">
-            <h3>Gestão Documental</h3>
-            <p>Organização, classificação e padronização de documentos físicos e digitais.</p>
-        </div>
-
-        <div class="card">
-            <h3>Digitalização</h3>
-            <p>Transformação de documentos físicos em arquivos digitais organizados e indexados.</p>
-        </div>
-
-        <div class="card">
-            <h3>Estruturação de Dados</h3>
-            <p>Organização e análise estratégica de informações para melhor tomada de decisão.</p>
-        </div>
-
-        <div class="card">
-            <h3>Soluções Tecnológicas</h3>
-            <p>Implantação de sistemas e automação de processos personalizados.</p>
-        </div>
-    </div>
+<section id="solucoes" class="section">
+<h2>Soluções Estratégicas</h2>
+<div class="solutions">
+<div class="solution-card">
+<h3>Extração e Estruturação de Dados</h3>
+<p>OCR com IA de alta precisão para tratamento de dados desestruturados.</p>
+</div>
+<div class="solution-card">
+<h3>Convalidação e Auditoria</h3>
+<p>Validação histórica funcional e prevenção de inconsistências.</p>
+</div>
+<div class="solution-card">
+<h3>Gestão Documental</h3>
+<p>Organização física e digital com tabela de temporalidade.</p>
+</div>
+</div>
 </section>
 
-<section id="contato" class="contact">
-    <h2>Contato</h2>
-    <p>Email: contato@precisa.com.br</p>
-    <p>Telefone: (00) 0000-0000</p>
-    <p>WhatsApp: (00) 00000-0000</p>
+<section class="section diferenciais">
+<h2>Diferenciais Competitivos</h2>
+<div class="diferenciais-grid">
+<div>
+<h3>Experiência Consolidada</h3>
+<p>Atuação nacional com foco em setor público.</p>
+</div>
+<div>
+<h3>IA Aplicada</h3>
+<p>Soluções com Machine Learning e automação inteligente.</p>
+</div>
+<div>
+<h3>Conformidade Normativa</h3>
+<p>Adequação às normas e órgãos de controle.</p>
+</div>
+</div>
+</section>
+
+<section id="contato" class="cta">
+<h2>Pronto para transformar seus dados?</h2>
+<p>Entre em contato e fale com nossos especialistas.</p>
+<a href="mailto:contato@precisa.com.br" class="btn btn-primary">Enviar Mensagem</a>
 </section>
 
 <footer>
-    © 2026 Precisa Sistematização & Tecnologia - Todos os direitos reservados.
+<p>© 2026 Precisa Sistematização & Tecnologia</p>
+<p>Fundada em 1998 · Atuação em Mato Grosso desde 2004</p>
 </footer>
 
 </body>
